@@ -1,6 +1,6 @@
 {
   "name": "@bothaven/common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "common modules for @bothaven. ",
   "main": "index.ts",
   "type": "module",
