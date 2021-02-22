@@ -2,9 +2,9 @@ enum Requests {
     GET, POST, PUT, PATCH, DELETE
 }
 
-type RequestKeys = keyof typeof Requests;
-export default class Options {
-    request: RequestKeys;
+export type RequestKeys = keyof typeof Requests;
+export class Options {
+    method: RequestKeys;
     body?: any;
     headers?: any;
     static fallbackOptions = {
@@ -14,26 +14,26 @@ export default class Options {
         "credentials": "include",
         "User-Agent":"discord / node-fetch"
     }
-    constructor(request: RequestKeys, body?: any, headers?: any){
-        this.request = request;
-        this.body = body || null;
-        this.headers = headers || Options.fallbackOptions;
-
-        this.transform()
+    constructor(request: RequestKeys, optionals?: {body?: any, headers?: any}){
+        this.method= request;
+        if(optionals?.body) this.body = optionals.body;
+        if(optionals?.headers) this.headers = optionals.headers;
     }
     transform() {
         if(this.body){
             return {
-                method: this.request,
+                method: this.method,
                 body: JSON.stringify(this.body),
                 headers: this.headers
             }
         }
         else {
             return {
-                method: this.request,
+                method: this.method,
                 headers: this.headers
             }
         }
     }
 } 
+
+export default Options;
