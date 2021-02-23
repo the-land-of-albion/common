@@ -45,6 +45,6 @@ jobs:
           # Severity level - info, warn, or error
           severity: info # optional, default is error
           # Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
-          username: Sir Github of the Repo# optional
+          username: Sir Github of the Repo
           # Notification color in the form poundsign rrggbb (hex). Default determined by severity.
-          avatarUrl: https://www.flaticon.com/svg/vstatic/svg/3408/3408537.svg?token=exp=1614059994~hmac=9d984ea8b5288c8a88b8b073af5e8418
+          avatarUrl: https://raw.githubusercontent.com/rbrtbrnschn/taxiJs/main/assets/img/favicon/favicon-114.png
