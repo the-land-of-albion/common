@@ -47,4 +47,4 @@ jobs:
           # Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
           username: Sir Github of the Repo
           # Notification color in the form poundsign rrggbb (hex). Default determined by severity.
-          avatarUrl: https://raw.githubusercontent.com/rbrtbrnschn/taxiJs/main/assets/img/favicon/favicon-114.png
+          avatarUrl: https://raw.githubusercontent.com/BotHaven/static/main/img/sir_github_of_the_repo.png
