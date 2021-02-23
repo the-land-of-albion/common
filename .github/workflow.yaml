@@ -1,0 +1,37 @@
+- name: Test Success
+    uses: rjstone/discord-webhook-notify@v1.0.4
+    if: success()
+    with:
+        username: Sir Github of the Repo
+        severity: info
+        details: Test succeded.
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+- name: Test Failure
+    uses: rjstone/discord-webhook-notify@v1
+    if: failure()
+    with:
+        username: Sir Github of the Repo
+        severity: error
+        details: Test failed!
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+- name: Test cancelled
+    uses: rjstone/discord-webhook-notify@v1
+    if: cancelled():
+    with:
+        username: Sir Github of the Repo
+        severity: warn
+        details: Test cancelled
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+- name: Test custom
+    uses:
+    with:
+        severity: info
+        username: Sir Github of the Repo
+        color: '#ff00aa'
+        avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+        text: This is where text goes.
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
+
+
+        
