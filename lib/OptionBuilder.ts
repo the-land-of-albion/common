@@ -11,7 +11,7 @@ export class OptionsBuilder{
         this.headers = headers;
         return this;
     }
-    build(url, req: RequestKeys, optionals?: {body: any, headers: Record<string, any>}){
+    build(url, req: RequestKeys, optionals?: {body?: any, headers?: Record<string, any>}){
         const usedHeaders = {...this.headers,...optionals?.headers }; 
         const builderOptionals = { optionals: optionals?.body, headers: usedHeaders}
         return fetch(url, new Options(req, builderOptionals));
