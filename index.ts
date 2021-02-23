@@ -1,2 +1,3 @@
-export { Options } from "./lib/Options";
-export { OptionsBuilder } from "./lib/OptionBuilder";
+import{ Options } from "./lib/Options";
+import { OptionsBuilder } from "./lib/OptionBuilder";
+export {Options, OptionsBuilder};

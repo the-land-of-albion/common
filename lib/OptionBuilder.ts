@@ -1,4 +1,6 @@
 import { Options, RequestKeys } from "./Options";
+import fetch from "node-fetch";
+
 
 export class OptionsBuilder{
     private headers?: Record<string,any>
@@ -9,10 +11,10 @@ export class OptionsBuilder{
         this.headers = headers;
         return this;
     }
-    build(req: RequestKeys, optionals?: {body: any, headers: Record<string, any>}){
+    build(url, req: RequestKeys, optionals?: {body: any, headers: Record<string, any>}){
         const usedHeaders = {...this.headers,...optionals?.headers }; 
         const builderOptionals = { optionals: optionals?.body, headers: usedHeaders}
-        return new Options(req, builderOptionals)
+        return fetch(url, new Options(req, builderOptionals));
     }
 }
 
