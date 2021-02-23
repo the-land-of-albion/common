@@ -40,7 +40,7 @@ jobs:
         # uses: rjstone/discord-webhook-notify@89b0bf43c2c8514f70d0dcba4a706b904e8a3112
         uses: bothaven/classic-discord-webhook@main
         with:
-          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }} 
           id: ${{ secrets.DISCORD_WEBHOOK_ID }} 
           token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
           # Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
