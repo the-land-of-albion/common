@@ -38,7 +38,7 @@ jobs:
       - name: Discord Webhook Notify
         # You may pin to the exact commit or the version.
         # uses: rjstone/discord-webhook-notify@89b0bf43c2c8514f70d0dcba4a706b904e8a3112
-        uses: bothaven/classic-discord-webhook@1.0.1
+        uses: bothaven/classic-discord-webhook@main
         with:
           id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
