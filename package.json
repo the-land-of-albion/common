@@ -2,7 +2,7 @@
   "name": "@bothaven/common",
   "version": "1.0.6",
   "description": "common modules for @bothaven. ",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
