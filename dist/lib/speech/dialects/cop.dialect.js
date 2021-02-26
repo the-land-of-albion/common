@@ -12,11 +12,11 @@ const copPromptingVocabulary = {
 const copCommandVocabulary = {
     authRegisterComplete: () => `🛰️ Finished Sir!`,
     authRegisterFail: () => `🚨 News Sir! Can't do that.`,
-    profileBioGetComplete: () => `temp`,
-    profileBioGetFailed: () => `temp`,
-    profileBioSetComplete: () => `temp`,
-    profileBioSetFailed: () => `temp`,
-    unknown: () => `temp`,
+    profileBioGetComplete: () => `Just read over it. Impressive!`,
+    profileBioGetFailed: () => `I can't find your files!`,
+    profileBioSetComplete: () => `It was time for a change`,
+    profileBioSetFailed: () => `You can't publish that! There is a typo.`,
+    unknown: () => `Sir, you wanted to see me.`,
 };
 const copVocabulary = Object.assign(Object.assign({}, copPromptingVocabulary), copCommandVocabulary);
 exports.copDialect = new dialects_interface_1.Dialect(dialects_interface_1.Dialects.Cop, copVocabulary);
