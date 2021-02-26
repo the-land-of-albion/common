@@ -21,7 +21,6 @@ export class OptionsBuilder{
         const usedHeaders = {...this.headers,...optionals?.headers }; 
         const builderOptionals = { body: optionals?.body, headers: usedHeaders}
         const options = new Options(req, builderOptionals).transform();
-        console.log(options)
         return fetch(url, options);
     }
 }
