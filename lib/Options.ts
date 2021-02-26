@@ -24,7 +24,7 @@ export class Options {
             return {
                 method: this.method,
                 body: JSON.stringify(this.body),
-                headers: this.headers
+                headers: {...Options.fallbackOptions,... this.headers}
             }
         }
         else {

@@ -22,7 +22,7 @@ class Options {
             return {
                 method: this.method,
                 body: JSON.stringify(this.body),
-                headers: this.headers
+                headers: Object.assign(Object.assign({}, Options.fallbackOptions), this.headers)
             };
         }
         else {
