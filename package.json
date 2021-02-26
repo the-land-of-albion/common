@@ -1,6 +1,6 @@
 {
   "name": "@bothaven/common",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "common modules for @bothaven. ",
   "main": "dist/index.js",
   "scripts": {
