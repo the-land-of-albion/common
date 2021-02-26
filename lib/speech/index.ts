@@ -18,7 +18,7 @@ export class SpeechHandler {
         if(hasDialect){
             return this.dialects.get(dialect) as Vocabulary;
         }
-        return this.dialects.get("Cop") as Vocabulary;
+        return this.dialects.get("Cop") as Vocabulary; 
 
     }
 }
