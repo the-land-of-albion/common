@@ -15,6 +15,7 @@ class SpeechHandler {
         if (hasDialect) {
             return this.dialects.get(dialect);
         }
+        return this.dialects.get("Cop");
     }
 }
 exports.SpeechHandler = SpeechHandler;
