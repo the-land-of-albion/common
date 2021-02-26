@@ -16,8 +16,9 @@ export class SpeechHandler {
     getDialect(dialect: DialectKeys){
         const hasDialect = this.dialects.has(dialect);
         if(hasDialect){
-            return this.dialects.get(dialect);
+            return this.dialects.get(dialect) as Vocabulary;
         }
+        return this.dialects.get("Cop") as Vocabulary;
 
     }
 }
