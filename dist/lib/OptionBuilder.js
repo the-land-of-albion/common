@@ -21,7 +21,6 @@ class OptionsBuilder {
         const usedHeaders = Object.assign(Object.assign({}, this.headers), optionals === null || optionals === void 0 ? void 0 : optionals.headers);
         const builderOptionals = { body: optionals === null || optionals === void 0 ? void 0 : optionals.body, headers: usedHeaders };
         const options = new Options_1.Options(req, builderOptionals).transform();
-        console.log(options);
         return node_fetch_1.default(url, options);
     }
 }

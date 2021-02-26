@@ -7,8 +7,8 @@ const optionsBuilder = new _1.OptionsBuilder();
 // optionsBuilder.fetch("http://localhost:3000/user/pete/game", "POST", { body: { title: "paisho", _title: "paisho" }})
 //     .then((res) => res.json())
 //     .then(console.log)
-// Invite caption
-optionsBuilder.fetch("http://localhost:3000/user/pete/game/paisho/invite", "PUT", { body: { user: "captain" } })
-    .then((res) => res.json())
-    .then(console.log);
+// Invite captain
+// optionsBuilder.fetch("http://localhost:3000/user/pete/game/paisho/invite", "PUT", {body: {user: "captain"}})
+// .then((res) => res.json())
+// .then(console.log)
 //# sourceMappingURL=test.js.map
