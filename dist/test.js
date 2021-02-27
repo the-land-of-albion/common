@@ -11,4 +11,7 @@ const optionsBuilder = new _1.OptionsBuilder();
 // optionsBuilder.fetch("http://localhost:3000/user/pete/game/paisho/invite", "PUT", {body: {user: "captain"}})
 // .then((res) => res.json())
 // .then(console.log)
+optionsBuilder.fetch("http://localhost:3000/user/peter", "GET")
+    .then((res) => res.json())
+    .then(console.log);
 //# sourceMappingURL=test.js.map
