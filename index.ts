@@ -7,3 +7,4 @@ import {Titles} from "./lib/titles"
 const botHavenSpeech = speechHandler;
 
 export {Options, OptionsBuilder, botHavenSpeech, Titles};
+export {npcs, Npc, NpcBot, NpcMortal} from "./lib/npc";

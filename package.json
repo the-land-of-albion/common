@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "discord.js": "^12.5.1",
+    "node-fetch": "^2.6.1",
+    "tslib": "^2.1.0"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.5.8"
