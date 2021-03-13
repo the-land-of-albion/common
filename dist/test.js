@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require("./");
+const { npcs } = require("./lib/npc");
 const pirateTalk = _1.botHavenSpeech.getDialect("Pirate");
 const optionsBuilder = new _1.OptionsBuilder();
 // Create game
@@ -15,10 +16,10 @@ const optionsBuilder = new _1.OptionsBuilder();
 //     .then((res) => res.json())
 //     .then(console.log)
 // console.log(Titles)
-const LordHewelet = new _1.npcs.bots.LordHewelet();
-const LordHelyes = new _1.npcs.bots.LordHelyes();
-const LordBrom = new _1.npcs.bots.LordBrom();
-const Killgarah = new _1.npcs.bots.LordBrom();
-const Emerus = new _1.npcs.bots.Emerus();
-console.log(LordHelyes, LordHewelet, LordBrom, Emerus, Killgarah);
+// const LordHewelet = new npcs.bots.LordHewelet();
+// const LordHelyes = new npcs.bots.LordHelyes();
+// const LordBrom = new npcs.bots.LordBrom();
+// const Killgarah = new npcs.bots.LordBrom();
+// const Emerus = new npcs.bots.Emerus();
+// console.log(LordHelyes,LordHewelet, LordBrom, Emerus,Killgarah);
 //# sourceMappingURL=test.js.map
