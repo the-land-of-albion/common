@@ -10,12 +10,14 @@ import {ColorResolvable, MessageEmbed} from "discord.js";
 export class Npc {
     name: string;
     avatar: string;
+    description?: string;
     color: ColorResolvable;
-    constructor(options: {name: string, avatar: string, color?: ColorResolvable}){
-        const {name, avatar, color} = options;
+    constructor(options: {name: string, avatar: string, description?: string, color?: ColorResolvable}){
+        const {name, avatar, color, description} = options;
         this.name = name;
         this.avatar = avatar;
         this.color = color || "BLUE";
+        description && (this.description = description);
     }
 
     /**

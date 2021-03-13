@@ -8,7 +8,12 @@ class NpcBot extends npc_1.Npc {
         const { categoryIds, channelIds, prefix } = options;
         this.categoryIds = categoryIds || [];
         this.channelIds = channelIds || [];
-        this.prefix = prefix;
+        this._prefix = prefix;
+    }
+    prefix(NODE_ENV) {
+        if (NODE_ENV === "production")
+            return this._prefix[0];
+        return this._prefix[1];
     }
     canSendMessage(message) {
         if (!this.categoryIds.length && !this.channelIds.length)

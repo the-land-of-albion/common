@@ -10,10 +10,11 @@ const discord_js_1 = require("discord.js");
  */
 class Npc {
     constructor(options) {
-        const { name, avatar, color } = options;
+        const { name, avatar, color, description } = options;
         this.name = name;
         this.avatar = avatar;
         this.color = color || "BLUE";
+        description && (this.description = description);
     }
     /**
      * Generates Base Npc MessageEmbed.

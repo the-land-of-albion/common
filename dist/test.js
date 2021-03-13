@@ -15,5 +15,10 @@ const optionsBuilder = new _1.OptionsBuilder();
 //     .then((res) => res.json())
 //     .then(console.log)
 // console.log(Titles)
-console.log(_1.npcs);
+const LordHewelet = new _1.npcs.bots.LordHewelet();
+const LordHelyes = new _1.npcs.bots.LordHelyes();
+const LordBrom = new _1.npcs.bots.LordBrom();
+const Killgarah = new _1.npcs.bots.LordBrom();
+const Emerus = new _1.npcs.bots.Emerus();
+console.log(LordHelyes, LordHewelet, LordBrom, Emerus, Killgarah);
 //# sourceMappingURL=test.js.map
