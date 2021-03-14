@@ -8,3 +8,4 @@ const botHavenSpeech = speechHandler;
 
 export {Options, OptionsBuilder, botHavenSpeech, Titles};
 export {npcs, Npc, NpcBot, NpcMortal} from "./lib/npc";
+export {mapOfAlbion, City, Cities, CityKeys} from "./lib/map";
