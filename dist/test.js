@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _1 = require("./");
-const { npcs } = require("./lib/npc");
 const pirateTalk = _1.botHavenSpeech.getDialect("Pirate");
 const optionsBuilder = new _1.OptionsBuilder();
 // Create game
